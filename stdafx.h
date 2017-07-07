@@ -5,10 +5,10 @@
 // Windows 헤더 파일:
 #include <windows.h>
 
-#include <stdlib.h>
 #include <iostream>
-#include <memory.h>
-#include <tchar.h>
+#include <memory>
+#include <vector>
+#include <map>
 
 #include "commonMacroFunction.h"
 #include "randomFunction.h"
@@ -22,6 +22,8 @@
 #include "additionalUtils.h"
 #include "txtData.h"
 #include "digManager.h"
+
+#include "yoonho_defines.h"
 
 
 using namespace std;

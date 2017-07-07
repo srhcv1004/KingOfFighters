@@ -58,6 +58,9 @@
     <Filter Include="MainGame\WansuKim\commandQueue">
       <UniqueIdentifier>{ede5f84b-ad85-4293-bc97-1d2b97363553}</UniqueIdentifier>
     </Filter>
+    <Filter Include="yoonho">
+      <UniqueIdentifier>{f106bef2-988a-4ce0-bb4a-3d02a00c934e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -144,6 +147,21 @@
     <ClInclude Include="commandQueueDefine.h">
       <Filter>MainGame\WansuKim\commandQueue</Filter>
     </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>yoonho</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>yoonho</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterAction.h">
+      <Filter>yoonho</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterActionManager.h">
+      <Filter>yoonho</Filter>
+    </ClInclude>
+    <ClInclude Include="yoonho_defines.h">
+      <Filter>yoonho</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -211,6 +229,18 @@
     </ClCompile>
     <ClCompile Include="commandQueue.cpp">
       <Filter>MainGame\WansuKim\commandQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>yoonho</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterAction.cpp">
+      <Filter>yoonho</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>yoonho</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterActionManager.cpp">
+      <Filter>yoonho</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
