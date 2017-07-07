@@ -13,6 +13,7 @@ private:
 
 	bool _debugMode;
 
+
 public:
 	CommandQueue();
 	~CommandQueue();

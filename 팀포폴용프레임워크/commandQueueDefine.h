@@ -3,7 +3,7 @@
 //큐의 각 버퍼는 1프레임기준. 즉 60당 1초
 const int KEYBUFFERSIZE = 60;
 const int COMMANDBUFFERSIZE = 10;
-const int COMMANDCHECKINTERVAL = 5;
+const int KEYHOLDCHECKTIME = 10;
 
 const int C_IDLE = 0x00000000;
 const int C_UP = 0x00000001;

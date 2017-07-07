@@ -60,18 +60,51 @@ void CommandQueue::updateKeyBuffer()
 	int keyTemp = 0;
 
 	if (KEYMANAGER->isStayKeyDown(KEY_UP))		keyTemp += C_UP;
-	if (KEYMANAGER->isStayKeyDown(KEY_DOWN))	keyTemp += C_UP;
-	if (KEYMANAGER->isStayKeyDown(KEY_LEFT))	keyTemp += C_UP;
-	if (KEYMANAGER->isStayKeyDown(KEY_RIGHT))	keyTemp += C_UP;
-	if (KEYMANAGER->isStayKeyDown(KEY_PUNCH))	keyTemp += C_UP;
-	if (KEYMANAGER->isStayKeyDown(KEY_PPUNCH))	keyTemp += C_UP;
-	if (KEYMANAGER->isStayKeyDown(KEY_KICK))	keyTemp += C_UP;
-	if (KEYMANAGER->isStayKeyDown(KEY_PKICK))	keyTemp += C_UP;
+	if (KEYMANAGER->isStayKeyDown(KEY_DOWN))	keyTemp += C_DOWN;
+	if (KEYMANAGER->isStayKeyDown(KEY_LEFT))	keyTemp += C_LEFT;
+	if (KEYMANAGER->isStayKeyDown(KEY_RIGHT))	keyTemp += C_RIGHT;
+	if (KEYMANAGER->isStayKeyDown(KEY_PUNCH))	keyTemp += C_PUNCH;
+	if (KEYMANAGER->isStayKeyDown(KEY_PPUNCH))	keyTemp += C_PPUNCH;
+	if (KEYMANAGER->isStayKeyDown(KEY_KICK))	keyTemp += C_KICK;
+	if (KEYMANAGER->isStayKeyDown(KEY_PKICK))	keyTemp += C_PKICK;
+
+	_keyBuffer[0] = keyTemp;
 }
 
 void CommandQueue::updateCommandBuffer()
 {
+	// [0, ..... 0] = 60개
+	//int currentKey;
+	
+	bool isDifferentKey = false;
+	bool isHoldKey = false;
+	int keyHoldCount = 0;
+	int commandArrayIndex = -1;
+	for (int i = 0; i < KEYBUFFERSIZE; ++i)
+	{
+		if (_commandBuffer[commandArrayIndex] == _keyBuffer[i])
+		{
+			keyHoldCount++;
+		}
+		else
+		{
+			keyHoldCount = 0;
+			isDifferentKey = true;
+		}
+		if (keyHoldCount < KEYHOLDCHECKTIME)
+		{
+			
+		}
+		if (isDifferentKey) // 기존의 키와 다른 버튼이 눌렸다면
+		{
+			commandArrayIndex++;
+			_commandBuffer[commandArrayIndex] = _keyBuffer[i];
+			//count = 0;
+		}
 
+		
+		//++count;
+	}
 }
 
 void CommandQueue::renderKeyBuffer()
