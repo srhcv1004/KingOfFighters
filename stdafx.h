@@ -23,7 +23,16 @@
 #include "txtData.h"
 #include "digManager.h"
 
+<<<<<<< HEAD
 #include "yoonho_defines.h"
+=======
+/////////공용헤더는 여기에 추가//////////
+
+#include "CommandQueueDefine.h"
+#include "CameraDefine.h"
+
+///////////////////////////////////////
+>>>>>>> WansuKim/commandQueue,camera
 
 
 using namespace std;
