@@ -52,6 +52,12 @@
     <Filter Include="2DGameFramework\button">
       <UniqueIdentifier>{0b3c6266-f292-4d88-8f94-1cb381560a57}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MainGame\WansuKim">
+      <UniqueIdentifier>{486e28b2-1389-4009-b869-0d5fb0a61f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame\WansuKim\commandQueue">
+      <UniqueIdentifier>{ede5f84b-ad85-4293-bc97-1d2b97363553}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -132,6 +138,12 @@
     <ClInclude Include="sceneManager.h">
       <Filter>2DGameFramework\Manager</Filter>
     </ClInclude>
+    <ClInclude Include="commandQueue.h">
+      <Filter>MainGame\WansuKim\commandQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="commandQueueDefine.h">
+      <Filter>MainGame\WansuKim\commandQueue</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -196,6 +208,9 @@
     </ClCompile>
     <ClCompile Include="sceneManager.cpp">
       <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="commandQueue.cpp">
+      <Filter>MainGame\WansuKim\commandQueue</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
