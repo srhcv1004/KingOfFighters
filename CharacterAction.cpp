@@ -10,3 +10,8 @@ CharacterAction::CharacterAction()
 CharacterAction::~CharacterAction()
 {
 }
+
+bool CharacterAction::isActionEnd()
+{
+	return false;
+}

@@ -5,10 +5,10 @@
 // Windows 헤더 파일:
 #include <windows.h>
 
+#include <stdlib.h>
 #include <iostream>
-#include <memory>
-#include <vector>
-#include <map>
+#include <memory.h>
+#include <tchar.h>
 
 #include "commonMacroFunction.h"
 #include "randomFunction.h"
@@ -23,21 +23,13 @@
 #include "txtData.h"
 #include "digManager.h"
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+///////////////공용헤더는 여기에 추가할 것////////////////
 #include "yoonho_defines.h"
-=======
-/////////공용헤더는 여기에 추가//////////
-
-#include "CommandQueueDefine.h"
 #include "CameraDefine.h"
+#include "CommandQueueDefine.h"
 
-///////////////////////////////////////
->>>>>>> WansuKim/commandQueue,camera
+///////////////////////////////////////////////////////
 
-
-=======
->>>>>>> WansuKim/commandQueue,camera
 using namespace std;
 using namespace THETA_UTIL;
 

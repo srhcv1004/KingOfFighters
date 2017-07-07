@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -19,13 +19,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -80,13 +80,14 @@
     <ClInclude Include="additionalUtils.h" />
     <ClInclude Include="animation.h" />
     <ClInclude Include="button.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraDefine.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="CharacterAction.h" />
     <ClInclude Include="CharacterActionManager.h" />
-    <ClInclude Include="commandQueue.h" />
-    <ClInclude Include="commandQueueDefine.h" />
+    <ClInclude Include="CommandQueue.h" />
+    <ClInclude Include="CommandQueueDefine.h" />
     <ClInclude Include="commonMacroFunction.h" />
-    <ClInclude Include="yoonho_defines.h" />
     <ClInclude Include="digManager.h" />
     <ClInclude Include="effect.h" />
     <ClInclude Include="effectManager.h" />
@@ -109,15 +110,17 @@
     <ClInclude Include="timer.h" />
     <ClInclude Include="txtData.h" />
     <ClInclude Include="utils.h" />
+    <ClInclude Include="yoonho_defines.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="additionalUtils.cpp" />
     <ClCompile Include="animation.cpp" />
     <ClCompile Include="button.cpp" />
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="CharacterAction.cpp" />
     <ClCompile Include="CharacterActionManager.cpp" />
-    <ClCompile Include="commandQueue.cpp" />
+    <ClCompile Include="CommandQueue.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="sceneManager.cpp" />
     <ClCompile Include="digManager.cpp" />
