@@ -59,8 +59,13 @@
       <UniqueIdentifier>{ede5f84b-ad85-4293-bc97-1d2b97363553}</UniqueIdentifier>
     </Filter>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Filter Include="yoonho">
       <UniqueIdentifier>{f106bef2-988a-4ce0-bb4a-3d02a00c934e}</UniqueIdentifier>
+=======
+    <Filter Include="WansuKim\Camera">
+      <UniqueIdentifier>{29ecf7a7-9666-4cd7-9bfa-1241f1365450}</UniqueIdentifier>
+>>>>>>> WansuKim/commandQueue,camera
 =======
     <Filter Include="WansuKim\Camera">
       <UniqueIdentifier>{29ecf7a7-9666-4cd7-9bfa-1241f1365450}</UniqueIdentifier>
@@ -151,6 +156,7 @@
     </ClInclude>
     <ClInclude Include="CommandQueueDefine.h">
       <Filter>WansuKim\CommandQueue</Filter>
+<<<<<<< HEAD
     </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>WansuKim\Camera</Filter>
@@ -172,6 +178,14 @@
     </ClInclude>
     <ClInclude Include="yoonho_defines.h">
       <Filter>yoonho</Filter>
+=======
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>WansuKim\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraDefine.h">
+      <Filter>WansuKim\Camera</Filter>
+>>>>>>> WansuKim/commandQueue,camera
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -243,6 +257,7 @@
     </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>WansuKim\Camera</Filter>
+<<<<<<< HEAD
     </ClCompile>
     <ClCompile Include="GameObject.cpp">
       <Filter>yoonho</Filter>
@@ -255,6 +270,8 @@
     </ClCompile>
     <ClCompile Include="CharacterActionManager.cpp">
       <Filter>yoonho</Filter>
+=======
+>>>>>>> WansuKim/commandQueue,camera
     </ClCompile>
   </ItemGroup>
 </Project>
