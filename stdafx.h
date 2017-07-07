@@ -23,14 +23,6 @@
 #include "txtData.h"
 #include "digManager.h"
 
-/////////공용헤더는 여기에 추가//////////
-
-#include "CommandQueueDefine.h"
-#include "CameraDefine.h"
-
-///////////////////////////////////////
-
-
 using namespace std;
 using namespace THETA_UTIL;
 
