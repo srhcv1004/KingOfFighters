@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "commandQueue.h"
+#include "CommandQueue.h"
 
 CommandQueue::CommandQueue(){}
 CommandQueue::~CommandQueue(){}

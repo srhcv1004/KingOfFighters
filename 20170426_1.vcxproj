@@ -80,8 +80,10 @@
     <ClInclude Include="additionalUtils.h" />
     <ClInclude Include="animation.h" />
     <ClInclude Include="button.h" />
-    <ClInclude Include="commandQueue.h" />
-    <ClInclude Include="commandQueueDefine.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraDefine.h" />
+    <ClInclude Include="CommandQueue.h" />
+    <ClInclude Include="CommandQueueDefine.h" />
     <ClInclude Include="commonMacroFunction.h" />
     <ClInclude Include="digManager.h" />
     <ClInclude Include="effect.h" />
@@ -109,7 +111,8 @@
     <ClCompile Include="additionalUtils.cpp" />
     <ClCompile Include="animation.cpp" />
     <ClCompile Include="button.cpp" />
-    <ClCompile Include="commandQueue.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CommandQueue.cpp" />
     <ClCompile Include="sceneManager.cpp" />
     <ClCompile Include="digManager.cpp" />
     <ClCompile Include="effect.cpp" />

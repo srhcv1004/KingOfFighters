@@ -52,11 +52,14 @@
     <Filter Include="2DGameFramework\button">
       <UniqueIdentifier>{0b3c6266-f292-4d88-8f94-1cb381560a57}</UniqueIdentifier>
     </Filter>
-    <Filter Include="MainGame\WansuKim">
+    <Filter Include="WansuKim">
       <UniqueIdentifier>{486e28b2-1389-4009-b869-0d5fb0a61f9f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="MainGame\WansuKim\commandQueue">
+    <Filter Include="WansuKim\CommandQueue">
       <UniqueIdentifier>{ede5f84b-ad85-4293-bc97-1d2b97363553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WansuKim\Camera">
+      <UniqueIdentifier>{29ecf7a7-9666-4cd7-9bfa-1241f1365450}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -138,11 +141,17 @@
     <ClInclude Include="sceneManager.h">
       <Filter>2DGameFramework\Manager</Filter>
     </ClInclude>
-    <ClInclude Include="commandQueue.h">
-      <Filter>MainGame\WansuKim\commandQueue</Filter>
+    <ClInclude Include="CommandQueue.h">
+      <Filter>WansuKim\CommandQueue</Filter>
     </ClInclude>
-    <ClInclude Include="commandQueueDefine.h">
-      <Filter>MainGame\WansuKim\commandQueue</Filter>
+    <ClInclude Include="CommandQueueDefine.h">
+      <Filter>WansuKim\CommandQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>WansuKim\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraDefine.h">
+      <Filter>WansuKim\Camera</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -209,8 +218,11 @@
     <ClCompile Include="sceneManager.cpp">
       <Filter>2DGameFramework\Manager</Filter>
     </ClCompile>
-    <ClCompile Include="commandQueue.cpp">
-      <Filter>MainGame\WansuKim\commandQueue</Filter>
+    <ClCompile Include="CommandQueue.cpp">
+      <Filter>WansuKim\CommandQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>WansuKim\Camera</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
